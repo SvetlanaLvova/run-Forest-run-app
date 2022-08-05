@@ -1,8 +1,11 @@
+import WorkoutItem from "./components/WorcoutItem/WorkoutItem";
+import Logo from "./components/Logo/Logo";
 
 function App() {
   return (
     <>
- <h1>Start! 007</h1>
+      <Logo />
+      <WorkoutItem />
     </>
   );
 }
