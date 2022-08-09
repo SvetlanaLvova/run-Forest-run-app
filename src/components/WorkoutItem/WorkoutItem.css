@@ -4,9 +4,10 @@
   align-items: center;
   padding: 0.5rem;
   margin: 20px;
-  background-color: #505050;
+  background-color: #636161;
   border-radius: 7px;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
+  cursor: default;
 }
 
 .workout-item__description {
@@ -17,6 +18,7 @@
   flex-flow: column-reverse;
   justify-content: flex-start;
   flex: 1;
+  cursor: default;
 }
 
 .workout-item h2 {
@@ -24,17 +26,34 @@
   font-size: 1rem;
   flex: 1;
   margin: 0 1rem;
-  color: #fefae1;
+  color: #e7e7e7;
 }
 
 .workout-item__distance {
   font-size: 1rem;
   font-weight: bold;
-  color: #fefae1;
+  color: #fffdfd;
   background-color: #2a5b84;
-  border: 1px solid white;
+  border: 1px solid #e7e7e7;
   padding: 0.5rem;
   border-radius: 7px;
+  cursor: default;
+}
+
+.workout-item__delete {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border: 1px solid #995544;
+  background-color: #af604c;
+  color: #fefae1;
+  border-radius: 7px;
+}
+
+.workout-item__delete:hover,
+.workout-item__delete:active {
+  background-color: #af604c;
+  border-color: #af604c;
 }
 
 @media (min-width: 580px) {
@@ -52,5 +71,9 @@
   .workout-item__distance {
     font-size: 1.25rem;
     padding: 0.5rem 1.5rem;
+  }
+
+  .workout-item__delete {
+    font-size: 1.25rem;
   }
 }

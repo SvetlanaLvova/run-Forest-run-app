@@ -1,0 +1,54 @@
+.new-workout {
+  background-color: #aac4d1;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 53.5rem;
+  max-width: 95%;
+  text-align: center;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25);
+}
+
+.new-workout button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border: 1px solid #2a5b84;
+  background-color: #2a5b84;
+  color: #ffffff;
+  border-radius: 7px;
+  margin-right: 3px;
+}
+
+.new-workout button:hover,
+.new-workout button:active {
+  background-color: #2a5c84b2;
+  border-color: #2a5c84b2;
+}
+
+.new-workout__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-workout__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.new-workout__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 15rem;
+  max-width: 100%;
+}
+
+.new-workout__actions {
+  text-align: left;
+}
+

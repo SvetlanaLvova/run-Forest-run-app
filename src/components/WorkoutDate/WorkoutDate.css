@@ -1,0 +1,28 @@
+.workout-date {
+  display: flex;
+  flex-direction: column;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid #ffffff;
+  background-color: #2a5b84;
+  color: #ffffff;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: center;
+}
+
+.workout-date__month {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.workout-date__year {
+  font-size: 0.75rem;
+}
+
+.workout-date__day {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
