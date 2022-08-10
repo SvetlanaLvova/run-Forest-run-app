@@ -3,8 +3,13 @@
   background-color: #aac4d1;
   margin: 2rem auto;
   width: 65rem;
-  height: 31.7rem;
+  height: 40.3rem;
   max-width: 95%;
   box-shadow: 0 2px 7px rgba(0, 0, 0, 0.25);
   overflow-y: auto;
+}
+
+.workout-list__fallback {
+  color: #3a3a3a;
+  text-align: center;
 }

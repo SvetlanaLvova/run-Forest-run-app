@@ -5,6 +5,7 @@ function NewWorkout(props) {
   const [inputName, setInputName] = useState(""); 
   const [inputDistance, setInputDistance] = useState("");
   const [inputDate, setInputDate] = useState("");
+  const [isFormVisible, setIsFormVisible] = useState(false)
 
   const nameChangeHandler = (event) => { 
     setInputName(event.target.value);
@@ -18,8 +19,17 @@ function NewWorkout(props) {
     setInputDate(event.target.value);
   };
 
+  const inputWordChangeHandler = () => {
+    setIsFormVisible(true)
+  };
+
+  const cancelInputWorkoutHeandler = () => {
+    setIsFormVisible(false)
+  }
+
   const submitHandler = (event) => { 
     event.preventDefault();
+
 
     const workoutData = {
       id: Math.random().toString(),
@@ -35,7 +45,8 @@ function NewWorkout(props) {
 
   return (
     <div className="new-workout">
-      <form onSubmit={submitHandler}>
+      {!isFormVisible && <button onClick={inputWordChangeHandler}>Добавить новую тренировку</button>}
+      {isFormVisible && <form onSubmit={submitHandler}>
         <div className="new-workout__controls">
           <div className="new-workout__control">
             <label>Название забега:</label>
@@ -57,9 +68,10 @@ function NewWorkout(props) {
           </div>
           <div className="new-workout__actions">
             <button type="submit">Записать тренировку</button>
+            <button type="button" onClick={cancelInputWorkoutHeandler}>Отмена</button>
           </div>
         </div>
-      </form>
+      </form>}
     </div>
   );
 }
