@@ -12,7 +12,7 @@
 В приложении реализована возможность просмотра статистики забегов по месяцам, а также есть возможность добавить в список новую тренировку. 
 
 </div>
-<div align="center">
+<div style="align: center; margin-top: 10px;">
   <img src="https://user-images.githubusercontent.com/73392762/183934032-4be4b138-1fe2-4737-9cdc-f0a926fcc991.png"/>
 </div>
 
