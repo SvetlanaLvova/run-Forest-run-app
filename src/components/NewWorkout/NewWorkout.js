@@ -23,7 +23,7 @@ function NewWorkout(props) {
 
     const workoutData = {
       id: Math.random().toString(),
-      name: inputName,
+      description: inputName,
       distance: inputDistance,
       date: new Date(inputDate)
     }
